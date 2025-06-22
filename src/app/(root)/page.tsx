@@ -2,6 +2,7 @@ import { ChatWidget } from "@/components/chat-widget";
 import { Features } from "@/components/features";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { AddDocs } from "@/components/AddDocs";
 import { Hero } from "@/components/hero";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
           <ChatWidget />
         </div>
         <Features />
+        <AddDocs />
       </main>
       <Footer />
     </div>

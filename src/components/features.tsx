@@ -1,5 +1,5 @@
 import { FeatureCard } from "@/components/feature-card";
-import { MessageSquare, GitBranch, Users } from "lucide-react";
+import { MessageSquare, GitBranch, Lock } from "lucide-react";
 
 const featuresData = [
   {
@@ -23,10 +23,10 @@ const featuresData = [
     iconBgColor: "bg-green-100",
   },
   {
-    icon: <Users className="text-purple-600" />,
-    title: "Atención",
+    icon: <Lock className="text-purple-600" />,
+    title: "Seguridad",
     description:
-      "Tu asistente genera respuestas instantáneas las 24 horas del día, los 7 días de la semana.",
+      "Tu asistente respeta la privacidad de tus datos y solo podrá acceder a los documentos que le hayas proporcionado. Tus datos no seran utilizados para reentrar a los modelos.",
     imageUrl:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDJahVjWTEPz8wG12iUG99MrcByfSZu3N4pahvzPMC7Kqj6e_FaIEgk4ZXYrZBKomNqCLgPsNiEeEurzVes7ImBgLeN5Xp3HukNouiNl47t5LbQNN8N6EoLqzCPiMd1A9BxulXvzrmjRqj8OeHe3VpMLTo0r8Eyj_AYXK_-lGBSgQzCsTdtHIzd3QR2IvPGh-ujN8mGD4eEsKhf_4WSE1aivTxc7oIbhDcaQUZrxIlyapPFO2lVVk1RpX-xjTFrtKWaRWeqVnbdnRjZ",
     imageAlt: "Chat and user best practices mockup",
