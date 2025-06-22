@@ -36,15 +36,15 @@ export function AddDocs() {
 
   return (
     <section className="py-12 md:py-16 w-full bg-white">
-      <Card className="panel">
+      <Card className="panel bg-white">
         <CardHeader>
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-2">
               <CardTitle className="text-2xl font-semibold text-gray-900 mb-2">
-                Subi tus Documentos
+                Subí tus Documentos
               </CardTitle>
               <CardDescription className="text-gray-700 mb-4 text-sm">
-                Subi tus documentos de manera segura para que tu asistente de IA
+                Subí tus documentos de manera segura para que tu asistente de IA
                 pueda acceder a ellos.
               </CardDescription>
               <p className="file-types text-xs text-gray-500">
@@ -58,7 +58,7 @@ export function AddDocs() {
                 className={`upload-area w-full p-6 text-center cursor-pointer rounded-lg border-2 border-dashed transition-colors ${
                   isDragActive
                     ? "border-blue-500 bg-blue-50"
-                    : "border-gray-300 hover:border-blue-400 hover:bg-gray-50"
+                    : "border-gray-300 hover:border-blue-400 hover:bg-white"
                 }`}
               >
                 <input {...getInputProps()} />
@@ -72,7 +72,7 @@ export function AddDocs() {
                     <span className="font-semibold text-blue-600">
                       Click para subir
                     </span>{" "}
-                    o arrastra y suelta
+                    o arrastrá y soltá
                   </p>
                 </div>
               </div>
@@ -81,12 +81,12 @@ export function AddDocs() {
         </CardHeader>
         {uploadedFiles.length > 0 && (
           <CardContent>
-            <h3 className="text-lg font-medium mb-4">Subi tus Documentos</h3>
+            <h3 className="text-lg font-medium mb-4">Archivos Subidos</h3>
             <div className="space-y-3">
               {uploadedFiles.map((file, index) => (
                 <div
                   key={index}
-                  className="file-animation flex items-center justify-between p-3 bg-gray-50 rounded-lg border"
+                  className="file-animation flex items-center justify-between p-3 bg-white rounded-lg border"
                 >
                   <div className="flex items-center space-x-3">
                     <FileIcon className="w-5 h-5 text-gray-500" />
@@ -96,7 +96,7 @@ export function AddDocs() {
                   </div>
                   <button
                     onClick={() => removeFile(file)}
-                    className="p-1 rounded-full hover:bg-gray-200"
+                    className="p-1 rounded-full hover:bg-gray-100"
                   >
                     <X className="w-4 h-4 text-gray-600" />
                   </button>

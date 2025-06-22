@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Mountain, Search, GitBranch, Bot } from "lucide-react";
+import { Menu, Search, GitBranch, Bot } from "lucide-react";
 
 export function Header() {
   return (

@@ -6,7 +6,7 @@ import { Sparkles, ArrowUp } from "lucide-react";
 
 export function ChatWidget() {
   return (
-    <Card className="bg-white p-6 rounded-lg shadow-lg border">
+    <Card className="bg-white p-6 rounded-lg shadow-lg border-gray-200">
       <CardContent className="p-0">
         <div className="flex items-start space-x-3 mb-6">
           <Avatar>
