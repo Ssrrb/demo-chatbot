@@ -2,12 +2,8 @@
 
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
-import {
-  VercelLogoIcon,
-  SunIcon,
-  MoonIcon,
-  DesktopIcon,
-} from "@radix-ui/react-icons";
+import { SunIcon, MoonIcon, DesktopIcon } from "@radix-ui/react-icons";
+import { Bot } from "lucide-react";
 
 export function Footer() {
   const { setTheme } = useTheme();
@@ -17,11 +13,11 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
-            <VercelLogoIcon className="h-7 w-24 text-black dark:text-white" />
+            <Bot className="h-7 w-24 text-black dark:text-white" />
           </div>
           <div>
             <h5 className="font-semibold mb-3 text-gray-900 dark:text-white">
-              Resources
+              Recursos
             </h5>
             <ul className="space-y-2">
               <li>
@@ -29,7 +25,7 @@ export function Footer() {
                   className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
                   href="#"
                 >
-                  Docs
+                  Documentos
                 </a>
               </li>
               <li>
@@ -37,7 +33,7 @@ export function Footer() {
                   className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
                   href="#"
                 >
-                  GitHub
+                  Agenda
                 </a>
               </li>
             </ul>
@@ -60,7 +56,7 @@ export function Footer() {
                   className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
                   href="#"
                 >
-                  Open source
+                  Contacto
                 </a>
               </li>
             </ul>
@@ -75,7 +71,7 @@ export function Footer() {
                   className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
                   href="#"
                 >
-                  Privacy
+                  Privacidad
                 </a>
               </li>
             </ul>

@@ -36,7 +36,7 @@ export function AddDocs() {
 
   return (
     <section className="py-12 md:py-16 w-full bg-white">
-      <Card className="panel bg-white">
+      <Card className="panel bg-white border border-gray-200">
         <CardHeader>
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div className="md:col-span-2">
@@ -45,7 +45,7 @@ export function AddDocs() {
               </CardTitle>
               <CardDescription className="text-gray-700 mb-4 text-sm">
                 Subí tus documentos de manera segura para que tu asistente de IA
-                pueda acceder a ellos.
+                los tenga en contexto.
               </CardDescription>
               <p className="file-types text-xs text-gray-500">
                 Tipos de archivos soportados: PDF, DOCX, TXT. Tamaño máximo por
@@ -109,7 +109,7 @@ export function AddDocs() {
       <style jsx>{`
         .panel {
           background-color: white;
-          border: 1px solid #e9ecef;
+          /* border removed—using Tailwind’s border-gray-200 now */
           border-radius: 0.5rem;
           box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
             0 1px 2px -1px rgba(0, 0, 0, 0.03);

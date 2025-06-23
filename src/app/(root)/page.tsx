@@ -4,6 +4,8 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { AddDocs } from "@/components/AddDocs";
 import { Hero } from "@/components/hero";
+import SampleDemo from '@/components/sample-demo';
+import { Message } from "@/components/Message";
 
 export default function Home() {
   return (
@@ -16,7 +18,9 @@ export default function Home() {
         </div>
         <Features />
         <AddDocs />
+        <SampleDemo />
       </main>
+      <Message />
       <Footer />
     </div>
   );
